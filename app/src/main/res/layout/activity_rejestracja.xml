@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_u113"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Dołącz do nas"
+            android:textColor="#333333"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/imie_rejestracja"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Imię"
+            android:inputType="textPersonName"
+            android:textColor="#7D7D7D"
+            android:textColorHint="#7D7D7D" />
+
+        <EditText
+            android:id="@+id/email_rejestracja"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="#7D7D7D"
+            android:textColorHint="#7D7D7D" />
+
+        <EditText
+            android:id="@+id/haslo_rejestracja"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Hasło"
+            android:inputType="textPassword"
+            android:textColor="#7D7D7D"
+            android:textColorHint="#7D7D7D" />
+
+        <EditText
+            android:id="@+id/haslo_potwierdz_rejestracja"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Potwierdź hasło"
+            android:inputType="textPassword"
+            android:textColor="#7D7D7D"
+            android:textColorHint="#7D7D7D" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Tworząc konto automatycznie akceptujesz Regulamin oraz Politykę Prywatności"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/zarejestruj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/kwadrat"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            android:text="Zarejestruj"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Posiadam już konto" />
+
+    </LinearLayout>
+</LinearLayout>
