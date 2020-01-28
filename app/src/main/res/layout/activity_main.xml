@@ -27,7 +27,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/montserrat"
-            android:text="Elo grzybiarzu, zapraszamy ponownie"
+            android:text="Cześć Grzybiarzu, witamy ponownie"
             android:textColor="#333333"
             android:textSize="32sp" />
 

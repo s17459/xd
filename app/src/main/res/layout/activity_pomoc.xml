@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/u20_div"
-    android:orientation="vertical"
-    tools:context=".menu_glowne" >
-
+    tools:context=".pomoc">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -35,7 +33,7 @@
                     android:id="@+id/telefon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/ic_u26" />
+                    app:srcCompat="@drawable/ic_u102" />
 
                 <TextView
                     android:id="@+id/numery_alarmowe"
@@ -44,7 +42,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Mapy"
+                    android:text="Numery alarmowe"
                     android:textColor="#333333"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -53,9 +51,43 @@
                     android:id="@+id/mapy_opis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="left"
                     android:fontFamily="@font/montserrat"
-                    android:gravity="center"
-                    android:text="Tutaj sprawdzisz swoją pozycję na mapach Google, zapiszesz miejsce parkowania, lub udostępnisz komuś swoją lokalizację"
+                    android:gravity="left"
+                    android:text="112 - ogólny numer alarmowy"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mapy_opis2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="left"
+                    android:text="997 - Policja"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mapy_opis3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="left"
+                    android:text="998 - Straż pożarna"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mapy_opis4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="left"
+                    android:text="999 - Pogotowie ratunkowe"
                     android:textColor="#333333"
                     android:textSize="14sp" />
 
@@ -80,7 +112,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:contentDescription="TODO"
-                    app:srcCompat="@drawable/ic_u38" />
+                    app:srcCompat="@drawable/ic_u105" />
 
                 <TextView
                     android:id="@+id/pierwsza_pomoc"
@@ -89,7 +121,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Pogoda"
+                    android:text="Pierwsza pomoc"
                     android:textColor="#333333"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -100,97 +132,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
                     android:gravity="center"
-                    android:text="Tutaj sprawdzisz pogodę na dzisiaj, oraz 3 dni wprzód"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="80dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/kafelka_menu_glowne"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <ImageView
-                    android:id="@+id/ksiazka"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="TODO"
-                    app:srcCompat="@drawable/ic_u43" />
-
-                <TextView
-                    android:id="@+id/atlas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Atlas grzybów"
-                    android:textColor="#333333"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/atlas_opis"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat"
-                    android:gravity="center"
-                    android:text="Tutaj dowiesz się jakie grzyby są jadalne, a jakie mogą Ci zaszkodzić"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="80dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/kafelka_menu_glowne"
-                android:clickable="true"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <ImageView
-                    android:id="@+id/info"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="TODO"
-                    app:srcCompat="@drawable/ic_u47" />
-
-                <TextView
-                    android:id="@+id/pomoc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Pomoc"
-                    android:textColor="#333333"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/pierwsza_pomoc_opis"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat"
-                    android:gravity="center"
-                    android:text="W wyjątkowej sytuacji znajdziesz tutaj pomoc"
+                    android:text="W razie wypadku znajdziesz tutaj porady dotyczące pierwszej pomocy"
                     android:textColor="#333333"
                     android:textSize="14sp" />
 
@@ -199,3 +141,4 @@
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
